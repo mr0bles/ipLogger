@@ -4,7 +4,7 @@
     <title>CEDESA</title>
     <style>
         body {
-            background-image: url(https://promotrip.files.wordpress.com/2013/10/4-335358.jpg);
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/15/Ingresso_Miniera_Cerro_Rico.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
