@@ -50,11 +50,11 @@ function logData()
         $ip = GetIP();
     }
 
-    $rem_port    = $_SERVER['REMOTE_PORT'];
-    $user_agent  = $_SERVER['HTTP_USER_AGENT'];
-    $rqst_method = $_SERVER['METHOD'] ?? '';
-    $rem_host    = $_SERVER['REMOTE_HOST'];
-    $referer     = $_SERVER['HTTP_REFERER'] ?? '';
+    $rem_port    = is_null($_SERVER['REMOTE_PORT']) ? '' : $_SERVER['REMOTE_PORT'];
+    $user_agent  = is_null($_SERVER['HTTP_USER_AGENT']) ? '' : $_SERVER['HTTP_USER_AGENT'];
+    $rqst_method = is_null($_SERVER['METHOD']) ? '' : $_SERVER['METHOD'];
+    $rem_host    = is_null($_SERVER['REMOTE_HOST']) ? '' : $_SERVER['REMOTE_HOST'];
+    $referer     = is_null($_SERVER['HTTP_REFERER']) ? '' : $_SERVER['HTTP_REFERER'];
     $date        = date("l dS of F Y h:i:s A");
     $log         = fopen("$ipLog", "a+");
 
